@@ -1,15 +1,8 @@
-function person(name,age,gender,city){
-    this.name=name;
-    this.age=age;
-    this.gender=gender;
+String.prototype.noOfKeys = function(){
+  var m = Object.keys(obj).length;
+   return m ;
+  };
   
+  var obj = {name:'sam',city:'jhs'};
+  console.log("obj ".noOfKeys());
   
-  }
-  person.prototype.nfkeys= function(){
-    console.log(Object.keys(person1).length);
-  }
-  
-  
-  var person1 = new person('punit',21,'male',);
-  
-  person1.nfkeys();
