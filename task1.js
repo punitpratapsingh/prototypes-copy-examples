@@ -1,15 +1,12 @@
-function person(name,age,gender,city){
-    this.name=name;
-    this.age=age;
-    this.gender=gender;
-  
-  
-  }
-  person.prototype.nfkeys= function(){
-    console.log(Object.keys(person1).length);
-  }
-  
-  
-  var person1 = new person('punit',21,'male',);
-  
-  person1.nfkeys();
+function vowels(str){
+    this.str=str;
+}
+vowels.prototype.countVowel= function(){
+
+    var m = this.str.match(/[aeiou]/gi);
+   m === null ? 0 : m.length;
+  console.log(m.length);
+   }
+
+var vowels1 = new vowels('hello');
+vowels1.countVowel();
